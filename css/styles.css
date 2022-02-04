@@ -1,8 +1,29 @@
-body {
+* {
   margin: 0;
   padding: 0;
 }
 
-img {
+/* img {
   width: 40rem;
+} */
+
+.slider {
+  display: block;
+  height: 293px;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+
+.slider img {
+  margin: auto;
+
+  width: 100%;
+  vertical-align: top;
 }
