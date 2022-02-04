@@ -23,7 +23,50 @@
 
 .slider img {
   margin: auto;
-
-  width: 100%;
+  height: 20rem;
+  /* width: 100%; */
   vertical-align: top;
+
+  transform-origin: right;
+  transition: 0.6s;
+}
+
+.slider img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+.slider li input:checked ~ label {
+  background-color: #ccc;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider label {
+  background-color: #000;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 10px;
+}
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+.slider li:nth-child(3) label {
+  left: 70px;
 }
